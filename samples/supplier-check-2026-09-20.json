@@ -1,0 +1,69 @@
+{
+  "reportVersion": 1,
+  "generatedAt": "2026-09-20T02:27:36.893Z",
+  "scope": "Exact corporate-number matching against selected retained NTA daily difference files only.",
+  "limitation": "No matching change does not establish existence, solvency, good standing, or a legal KYB pass. Dates with no available publication are not checked days.",
+  "requestedCompanies": 2,
+  "monitoredCompanies": 2,
+  "companiesWithEmittedEvents": 1,
+  "emittedEvents": 1,
+  "inspectedSourceRows": 2222,
+  "sourceCoverage": "ALL_SELECTED_FILES_INSPECTED",
+  "lookback": {
+    "requestedDays": 1,
+    "requestedEndDate": "2026-08-25",
+    "resolvedEndDate": "2026-08-25",
+    "windowStartDate": "2026-08-25",
+    "unavailableDates": [],
+    "sourceFiles": [
+      {
+        "publishedDate": "2026-08-25",
+        "fileNo": 27873,
+        "status": "fetched",
+        "archiveName": "diff_20260825.zip",
+        "sourceRows": 2222
+      }
+    ]
+  },
+  "fullyInspectedFileNos": [
+    27873
+  ],
+  "sourceError": null,
+  "budgetStop": {
+    "monitorChargeLimitReached": false,
+    "changeChargeLimitReached": false,
+    "explanation": null
+  },
+  "sourcePageUrl": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+  "attribution": "Created by Japan Signal Lab from NTA Corporate Number Publication Site data (https://www.houjin-bangou.nta.go.jp/download/sabun/index.html). This processed report is not an NTA product.",
+  "rows": [
+    {
+      "companyNumber": "1010001008916",
+      "result": "MATCHES_EMITTED",
+      "emittedEvents": 1,
+      "sourceCoverage": "ALL_SELECTED_FILES_INSPECTED",
+      "windowStartDate": "2026-08-25",
+      "resolvedEndDate": "2026-08-25",
+      "selectedFiles": 1,
+      "fullyInspectedFiles": 1,
+      "inspectedFileNos": "27873",
+      "sourcePageUrl": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+      "reportGeneratedAt": "2026-09-20T02:27:36.893Z",
+      "nextAction": "Review the Dataset events and official source before updating the supplier record."
+    },
+    {
+      "companyNumber": "0110005003755",
+      "result": "NO_MATCHES_IN_SELECTED_FILES",
+      "emittedEvents": 0,
+      "sourceCoverage": "ALL_SELECTED_FILES_INSPECTED",
+      "windowStartDate": "2026-08-25",
+      "resolvedEndDate": "2026-08-25",
+      "selectedFiles": 1,
+      "fullyInspectedFiles": 1,
+      "inspectedFileNos": "27873",
+      "sourcePageUrl": "https://www.houjin-bangou.nta.go.jp/download/sabun/index.html",
+      "reportGeneratedAt": "2026-09-20T02:27:36.893Z",
+      "nextAction": "Retain this check record. No matching change was found in these selected files; this is not proof of current legal status."
+    }
+  ]
+}

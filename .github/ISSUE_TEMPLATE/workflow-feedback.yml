@@ -1,0 +1,29 @@
+name: Workflow feedback
+description: Tell us which work you need the sample to support. Do not include private data.
+title: "Workflow feedback: "
+body:
+  - type: markdown
+    attributes:
+      value: "This is public. Do not post credentials, private watchlists, customer data, personal contacts or payment details."
+  - type: dropdown
+    id: product
+    attributes:
+      label: Workflow
+      options:
+        - Supplier record monitoring
+        - Liquor partner research
+    validations:
+      required: true
+  - type: textarea
+    id: job
+    attributes:
+      label: What job should the output help you complete?
+      description: Describe the workflow without naming private customers or uploading their records.
+    validations:
+      required: true
+  - type: textarea
+    id: gap
+    attributes:
+      label: What is missing or unclear in the public sample?
+    validations:
+      required: true
