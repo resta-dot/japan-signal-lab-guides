@@ -22,7 +22,7 @@ The sample is deliberately small. It is not a ranking, endorsement, contact list
 
 1. **Pick one channel.** For distributor research use `wholesale_license` and `import_export_license`. For alcohol ecommerce operator research use `online_sales_license`. These labels filter published facts, not buying intent.
 2. **Pick relevant prefectures.** A small output cap stops collection early. It is not a complete survey of every selected prefecture, and source discovery order decides which publication is processed first.
-3. **Inspect a small result first.** [Japan Liquor License Leads & Signals](https://apify.com/japan_signal_lab/japan-liquor-license-signals) has a prefilled preview of up to 10 records. On 2026-09-20 it returned 10 records from one parsed PDF with 49 source rows and no failed publications. Different dates or filters can produce fewer records, including none.
+3. **Inspect a small result first.** [Open the historical 10-record demo](https://console.apify.com/actors/oADiu8kyT9Zo1PP7X/input), keep **Hokkaido / 10 results**, and click **Start**. The July 2026 month and selected categories are prefilled under **Customize**. Rechecked on 2026-10-10: 10 records, one parsed PDF, 49 source rows, no failed publications. For current research, clear the month under Customize. Different dates or filters can produce fewer records, including none.
 4. **Keep the original evidence.** Export the corporate number when printed, published business name, prefecture, license category, processing category, effective date, publication date and source link. Missing corporate numbers must remain missing; do not infer them from a similar name.
 5. **Add your assessment separately.** Record source checked, geographic fit, channel fit and your own decision. Leave “partnership interest” unknown unless you have separate legitimate evidence. Do not overwrite source facts with assumptions.
 
@@ -37,6 +37,8 @@ The **effective date**, **publication date** and **date you downloaded the data*
 At existing PPE prices, one successfully parsed PDF plus ten emitted events costs **$0.12** ($0.02 + 10 × $0.01). Three PDFs plus ten events would be $0.16. A successfully parsed PDF with no matching results still incurs its scan fee. Read [current pricing](https://apify.com/japan_signal_lab/japan-liquor-license-signals/pricing) and check your available credit before starting.
 
 The static CSV here is free to inspect and requires no Apify account. Japan Signal Lab publishes this guide and operates the linked paid Actor.
+
+You can repeat the demo while you have enough account credit, but each run uses PPE pricing again. This is not an unlimited free trial. Reopening the CSV or an already saved result does not start another run.
 
 ## Official source and responsible use
 

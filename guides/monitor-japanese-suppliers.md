@@ -22,8 +22,8 @@ The second input is a **format-only test string**, not a source-verified company
 ## Run the same workflow on your own supplier list
 
 1. Export the verified corporate-number column from the system that already holds your supplier list. Import identifiers as **Text** to avoid spreadsheet conversion or scientific notation. Omit the heading and company names; do not reuse the format-only test string as a supplier.
-2. Open [Japan Supplier & KYB Change Monitor](https://apify.com/japan_signal_lab/japan-signal-lab). You can inspect its historical one-company demo first. The demo has an expected PPE price of **$0.0152**, not $0.
-3. Replace the demo number, clear the historical end date and choose a 30-day initial check. API users can continue using the existing `companyNumbers` array; do not accidentally keep demo numbers in both fields.
+2. Open the [historical one-company demo](https://console.apify.com/actors/0NQVu328uYLMIEeJ3/input), keep the sample number and click **Start**. The period and date are already set under **Customize**. The demo has an expected PPE price of **$0.0152 per run**, not $0; it was rechecked against the official source on 2026-10-10.
+3. For your own review, replace the demo number, open **Customize**, clear the historical end date and choose a 30-day initial check. API users can continue using the existing `companyNumbers` array; do not accidentally keep demo numbers in both fields.
 4. Inspect the **Dataset** for matching changes. Each event keeps its official process code, history sequence, effective date and source identity.
 5. Export the **Company-by-company check report (CSV)** and retain its companion JSON. The CSV tells you which numbers produced events and which could not be fully checked. The JSON gives file coverage and dates with no available publication.
 
@@ -40,6 +40,8 @@ A run may return an event and still be `PARTIAL`: a remaining balance smaller th
 After reviewing the first result, choose one day for a regular check or seven days for catch-up. An unchanged supplier list can legitimately produce no new events. Compare official identities and source dates before treating repeated exports as new work.
 
 At the published PPE prices, checking 100 companies and emitting five events costs **$0.075**: $0.005 per run + 100 × $0.00020 + 5 × $0.01. The coverage report adds no monitoring or event charges. Check the [current pricing page](https://apify.com/japan_signal_lab/japan-signal-lab/pricing) and available account credit before running.
+
+Repeated demos also use PPE pricing again. Available Apify credit may cover a run, but it is not an unlimited free trial. Inspecting this static CSV or reopening a saved result does not start another run.
 
 ## Official source and limitations
 
