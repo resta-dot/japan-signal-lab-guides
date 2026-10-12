@@ -12,6 +12,7 @@ body:
       options:
         - Supplier record monitoring
         - Liquor partner research
+        - Public procurement RFI / RFQ research
     validations:
       required: true
   - type: textarea
