@@ -1,4 +1,4 @@
-# Japan Signal Lab: Japanese supplier and alcohol-market research
+# Japan Signal Lab: supplier, alcohol-market and procurement research
 
 Practical guides and small, dated samples for teams working with Japanese companies. Inspect the data before deciding whether an automated workflow is useful.
 
@@ -6,13 +6,15 @@ Practical guides and small, dated samples for teams working with Japanese compan
 | --- | --- | --- |
 | Keep an existing Japanese supplier or CRM list up to date | [Monitor Japanese suppliers for closures and address changes](guides/monitor-japanese-suppliers.md) | [Company-by-company check CSV](samples/supplier-check-2026-09-20.csv) and [coverage JSON](samples/supplier-check-2026-09-20.json) |
 | Research potential Japanese alcohol wholesale or ecommerce partners | [Find alcohol wholesalers and ecommerce operators in Japan](guides/find-japan-alcohol-partners.md) | [Three-record partner-research CSV](samples/liquor-partner-research-2026-09-20.csv) |
+| Check selected Japanese public-sector RFQs and RFIs for your services | [Find Japanese RFI and RFQ opportunities](guides/find-japan-rfi-rfq-opportunities.md) | [Three-notice RFQ JSON excerpt](samples/buying-intent-2026-10-13.json) |
 
-**These are historical examples, not live company-status certificates, verified buyers or customer results.** Each guide explains the dates, scope, source and limitations. Samples were checked on 2026-09-20. Download a CSV using GitHub's **Raw / Download raw file** control. Import corporate numbers as **Text**, not numbers, in Excel or your CRM.
+**These are dated examples, not live company-status certificates, confirmed purchases or customer results.** Each guide explains the dates, scope, source and limitations. Supplier/Liquor samples were checked on 2026-09-20; procurement excerpts on 2026-10-13. Use GitHub's **Raw / Download raw file** control for a file. Import corporate numbers as **Text**, not numbers, in Excel or your CRM.
 
 ## Get a fresh result for your own workflow
 
 - [Japan Supplier & KYB Change Monitor on Apify](https://apify.com/japan_signal_lab/japan-signal-lab): exact corporate-number watchlist monitoring, with a separate company-by-company check report.
 - [Japan Liquor License Leads & Signals on Apify](https://apify.com/japan_signal_lab/japan-liquor-license-signals): official monthly liquor-license publications, with a small first-run preview.
+- [Japan Public Procurement Signals — RFI & RFQ on Apify](https://apify.com/japan_signal_lab/japan-buying-intent-signals): selected Forestry Agency quotation notices and Osaka City RFIs, with a maximum 10-notice live preview.
 
 Japan Signal Lab publishes these guides and operates the linked **paid** Actors. Static samples are free to inspect; running an Actor uses its published pay-per-event pricing and available Apify credits. No account is needed to read these guides. There is no email signup, contact enrichment or advertising tracker.
 
@@ -23,12 +25,15 @@ Japan Signal Lab publishes these guides and operates the linked **paid** Actors.
 
 Both demo sources were rechecked on 2026-10-10. They are historical examples, not live status certificates or buyer lists. If you previously used an Actor, **Restore example input** replaces your saved form with the demo; existing API calls and saved tasks are not migrated.
 
+The [procurement live preview](https://console.apify.com/actors/e5ioYzQlqwUbTBxLK/input) is different: keep **10 results** to inspect whatever currently qualifies in the selected sources. Published PPE is $0.005/run + $0.01/notice (10 costs $0.105). It can return fewer or no notices; check the source summary. The [free dated RFQ excerpt](samples/buying-intent-2026-10-13.json) provides a predictable format example without running anything.
+
 **Is trying again free?** The static files above can be inspected repeatedly without running an Actor or creating an account. Each Actor run, including a repeated demo, uses the published PPE pricing again. Available Apify account credits may cover a run, but this is not an unlimited free trial. Check your available credit before starting; reopening a saved result does not rerun it.
 
 ## 日本語での用途
 
 - **取引先台帳の更新確認**：既存の法人番号一覧と国税庁の日次差分を照合し、変更が見つかった企業・確認範囲が不足した企業を区別します。「変更なし」は現在の法的状態や健全性の保証ではありません。
 - **酒類事業者の提携候補調査**：卸売・輸出入・通信販売の免許区分と変更内容を出典付きで確認します。新設企業一覧、購入意欲や提携希望の確認済みリストではありません。
+- **公的調達案件の確認**：対象を林野庁の見積募集・大阪市のRFIに限定し、発注主体・調達対象・回答期限・公式出典を確認します。全国入札一覧や購入確定・受注保証ではありません。
 
 ## Questions or useful missing fields?
 
@@ -36,4 +41,4 @@ Use this repository's [workflow feedback form](https://github.com/resta-dot/japa
 
 ## Source and reuse
 
-Samples contain selected corporate public records, not personal contact lists. They are processed by Japan Signal Lab, not endorsed or produced by the National Tax Agency. See [source and reuse notes](SOURCES.md). Actor source repositories remain private; this repository contains only publication-ready guides and examples.
+Samples contain selected corporate public records and official procurement-notice facts, not personal contact lists. They are processed by Japan Signal Lab, not endorsed or produced by the issuing agencies. See [source and reuse notes](SOURCES.md). Actor source repositories remain private; this repository contains only publication-ready guides and examples.
