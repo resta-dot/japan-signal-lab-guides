@@ -1,0 +1,15 @@
+{
+  "sources": [
+    "forestry-quotes"
+  ],
+  "lookbackDays": 30,
+  "maxResults": 10,
+  "onlyChanges": false,
+  "keywords": [
+    "除排雪",
+    "除雪"
+  ],
+  "prefectures": [
+    "北海道"
+  ]
+}
