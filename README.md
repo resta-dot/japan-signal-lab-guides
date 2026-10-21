@@ -6,9 +6,9 @@ Practical guides and small, dated samples for teams working with Japanese compan
 | --- | --- | --- |
 | Keep an existing Japanese supplier or CRM list up to date | [Monitor Japanese suppliers for closures and address changes](guides/monitor-japanese-suppliers.md) | [Company-by-company check CSV](samples/supplier-check-2026-09-20.csv) and [coverage JSON](samples/supplier-check-2026-09-20.json) |
 | Research potential Japanese alcohol wholesale or ecommerce partners | [Find alcohol wholesalers and ecommerce operators in Japan](guides/find-japan-alcohol-partners.md) | [Three-record partner-research CSV](samples/liquor-partner-research-2026-09-20.csv) |
-| Check selected Japanese public-sector RFQs and RFIs for your services | [Find Japanese RFI and RFQ opportunities](guides/find-japan-rfi-rfq-opportunities.md) | [Three-notice RFQ JSON excerpt](samples/buying-intent-2026-10-13.json) |
+| Check selected Japanese public-sector RFQs and RFIs for your services | [Three practical procurement workflows](guides/find-japan-rfi-rfq-opportunities.md#three-practical-workflows-with-copyable-inputs) | [Three-notice RFQ JSON excerpt](samples/buying-intent-2026-10-22.json) |
 
-**These are dated examples, not live company-status certificates, confirmed purchases or customer results.** Each guide explains the dates, scope, source and limitations. Supplier/Liquor samples were checked on 2026-09-20; procurement excerpts on 2026-10-13. Use GitHub's **Raw / Download raw file** control for a file. Import corporate numbers as **Text**, not numbers, in Excel or your CRM.
+**These are dated examples, not live company-status certificates, confirmed purchases or customer results.** Each guide explains the dates, scope, source and limitations. Supplier/Liquor samples were checked on 2026-09-20; the latest procurement excerpt on 2026-10-22. The procurement guide includes copyable inputs for bathroom repairs, vehicle inspections and snow-equipment rental. Older procurement excerpts are archives, not current open opportunities. Use GitHub's **Raw / Download raw file** control for a file. Import corporate numbers as **Text**, not numbers, in Excel or your CRM.
 
 ## Get a fresh result for your own workflow
 
@@ -25,7 +25,7 @@ Japan Signal Lab publishes these guides and operates the linked **paid** Actors.
 
 Both demo sources were rechecked on 2026-10-10. They are historical examples, not live status certificates or buyer lists. If you previously used an Actor, **Restore example input** replaces your saved form with the demo; existing API calls and saved tasks are not migrated.
 
-The [procurement live preview](https://console.apify.com/actors/e5ioYzQlqwUbTBxLK/input) is different: keep **10 results** to inspect whatever currently qualifies in the selected sources. Published PPE is $0.005/run + $0.01/notice (10 costs $0.105). It can return fewer or no notices; check the source summary. The [free dated RFQ excerpt](samples/buying-intent-2026-10-13.json) provides a predictable format example without running anything.
+The [procurement live preview](https://console.apify.com/actors/e5ioYzQlqwUbTBxLK/input) is different: keep **10 results** to inspect whatever currently qualifies in the selected sources. Published PPE is $0.005/run + $0.01/notice (10 costs $0.105). It can return fewer or no notices; check the source summary. The [free dated RFQ excerpt](samples/buying-intent-2026-10-22.json) provides a predictable format example without running anything. For a focused review, use the guide's [three input presets](guides/find-japan-rfi-rfq-opportunities.md#three-practical-workflows-with-copyable-inputs); these remain billable live previews, not free Actor runs.
 
 **Is trying again free?** The static files above can be inspected repeatedly without running an Actor or creating an account. Each Actor run, including a repeated demo, uses the published PPE pricing again. Available Apify account credits may cover a run, but this is not an unlimited free trial. Check your available credit before starting; reopening a saved result does not rerun it.
 

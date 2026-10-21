@@ -1,0 +1,14 @@
+{
+  "sources": [
+    "forestry-quotes"
+  ],
+  "lookbackDays": 30,
+  "maxResults": 10,
+  "onlyChanges": false,
+  "keywords": [
+    "浴室修繕"
+  ],
+  "prefectures": [
+    "北海道"
+  ]
+}
