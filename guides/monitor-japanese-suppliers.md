@@ -22,8 +22,8 @@ The second input is a **format-only test string**, not a source-verified company
 ## Run the same workflow on your own supplier list
 
 1. Export the verified corporate-number column from the system that already holds your supplier list. Import identifiers as **Text** to avoid spreadsheet conversion or scientific notation. Omit the heading and company names; do not reuse the format-only test string as a supplier.
-2. Open the [historical one-company demo](https://console.apify.com/actors/0NQVu328uYLMIEeJ3/input), keep the sample number and click **Start**. The period and date are already set under **Customize**. The demo has an expected PPE price of **$0.0152 per run**, not $0; it was rechecked against the official source on 2026-10-10.
-3. For your own review, replace the demo number, open **Customize**, clear the historical end date and choose a 30-day initial check. API users can continue using the existing `companyNumbers` array; do not accidentally keep demo numbers in both fields.
+2. Open the [live one-event demo](https://console.apify.com/actors/0NQVu328uYLMIEeJ3/input), keep **LATEST_NTA_SAMPLE**, a one-day window and an empty end date. The Actor selects one actual event from the newest retained NTA file; this is a demonstration, **not** a check of a supplier you chose. Expected PPE is **$0.0152 per run**, not $0. The rolling demo replaced the fixed 2026-08-25 example after that file expired from the NTA download index; Owner QA was verified on 2026-10-28.
+3. For your own review, replace the entire sample text with your verified corporate-number list, open **Customize** and choose a 30-day initial check with the end date empty. API users can continue using the existing `companyNumbers` array; do not accidentally keep an old demo number in the advanced list. If your saved form is older, **Restore example input** loads the current demo before you customize it.
 4. Inspect the **Dataset** for matching changes. Each event keeps its official process code, history sequence, effective date and source identity.
 5. Export the **Company-by-company check report (CSV)** and retain its companion JSON. The CSV tells you which numbers produced events and which could not be fully checked. The JSON gives file coverage and dates with no available publication.
 
@@ -45,7 +45,7 @@ Repeated demos also use PPE pricing again. Available Apify credit may cover a ru
 
 ## Official source and limitations
 
-Source: [NTA Corporate Number Publication Site daily difference files](https://www.houjin-bangou.nta.go.jp/download/sabun/index.html). Processed by Japan Signal Lab under the [site's source-attribution and reuse terms](https://www.houjin-bangou.nta.go.jp/en/riyokiyaku/). NTA files have limited retention, so a pinned demo eventually needs refreshing.
+Source: [NTA Corporate Number Publication Site daily difference files](https://www.houjin-bangou.nta.go.jp/download/sabun/index.html). Processed by Japan Signal Lab under the [site's source-attribution and reuse terms](https://www.houjin-bangou.nta.go.jp/en/riyokiyaku/). NTA daily files have limited retention; historical sample downloads above are archives, not a promise that their original source ZIP can still be downloaded. The current rolling demo avoids pinning that date.
 
 This is a change feed for a known corporate-number list, not a complete Japanese corporate registry database, sanctions screen, insolvency feed, credit score or legal KYB pass. NTA's published OpenPGP signatures are not verified by this Actor.
 

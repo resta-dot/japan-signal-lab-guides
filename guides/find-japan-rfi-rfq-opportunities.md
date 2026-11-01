@@ -4,6 +4,8 @@ For facilities-maintenance, equipment-service and software vendors researching J
 
 This guide covers a small source-linked feed: selected Forestry Agency quotation notices and Osaka City's Digital Administration Bureau RFIs. It is not a nationwide tender database, a private-company contact list or a promise of sales.
 
+For a focused winter-service workflow, start with [How to find Hokkaido snow-removal RFQs](hokkaido-snow-removal-rfq.md). It explains the literal Japanese filters, notice/lot distinction and the human review after extraction.
+
 ## Inspect three real examples without an account
 
 Open the [free three-notice RFQ JSON excerpt](../samples/buying-intent-2026-10-22.json). Use GitHub's **Raw / Download raw file** control if you want the JSON file. No Apify account, email signup or Actor execution is needed.

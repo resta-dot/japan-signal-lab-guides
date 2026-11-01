@@ -2,6 +2,8 @@
 
 Practical guides and small, dated samples for teams working with Japanese companies. Inspect the data before deciding whether an automated workflow is useful.
 
+**For winter-service teams:** [Find Hokkaido snow-removal RFQs](guides/hokkaido-snow-removal-rfq.md), inspect a free example, then use a focused input for selected Forestry Agency quotations. Live previews are separately billable; the guide does not create a schedule or contact a buyer.
+
 | Your job | Start here | Inspect without running an Actor |
 | --- | --- | --- |
 | Keep an existing Japanese supplier or CRM list up to date | [Monitor Japanese suppliers for closures and address changes](guides/monitor-japanese-suppliers.md) | [Company-by-company check CSV](samples/supplier-check-2026-09-20.csv) and [coverage JSON](samples/supplier-check-2026-09-20.json) |
@@ -20,10 +22,10 @@ Japan Signal Lab publishes these guides and operates the linked **paid** Actors.
 
 ## Try the output without preparing your own input
 
-- [Supplier historical demo — one official event, expected PPE $0.0152](https://console.apify.com/actors/0NQVu328uYLMIEeJ3/input): keep the sample number and click **Start**. For your own list, open **Customize**, clear the historical end date and choose the audit period.
+- [Supplier live one-event demo — expected PPE $0.0152](https://console.apify.com/actors/0NQVu328uYLMIEeJ3/input): keep **LATEST_NTA_SAMPLE**, the one-day window and an empty end date. The Actor selects one real event from the newest retained NTA file; it is not a check of a company you monitor. For your own list, replace the sample text with your verified corporate numbers and choose the audit period.
 - [Liquor historical demo — ten records, expected PPE $0.12](https://console.apify.com/actors/oADiu8kyT9Zo1PP7X/input): keep **Hokkaido / 10 results** and click **Start**. For current research, open **Customize** and clear the July 2026 month.
 
-Both demo sources were rechecked on 2026-10-10. They are historical examples, not live status certificates or buyer lists. If you previously used an Actor, **Restore example input** replaces your saved form with the demo; existing API calls and saved tasks are not migrated.
+The Supplier rolling demo replaces the expired fixed-date example; its latest Owner QA was verified on 2026-10-28. The Liquor demo is historical and its source was rechecked on 2026-10-10. Neither is a live company-status certificate or buyer list. If you previously used an Actor, **Restore example input** replaces your saved form with the current schema example; existing API calls and saved tasks are not migrated.
 
 The [procurement live preview](https://console.apify.com/actors/e5ioYzQlqwUbTBxLK/input) is different: keep **10 results** to inspect whatever currently qualifies in the selected sources. Published PPE is $0.005/run + $0.01/notice (10 costs $0.105). It can return fewer or no notices; check the source summary. The [free dated RFQ excerpt](samples/buying-intent-2026-10-22.json) provides a predictable format example without running anything. For a focused review, use the guide's [three input presets](guides/find-japan-rfi-rfq-opportunities.md#three-practical-workflows-with-copyable-inputs); these remain billable live previews, not free Actor runs.
 
